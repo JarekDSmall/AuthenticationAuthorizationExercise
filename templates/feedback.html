@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Feedback{% endblock %}
+
+{% block content %}
+    <h2>Feedback</h2>
+    <ul>
+        {% for fb in feedback %}
+            <li>{{ fb.content }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+
